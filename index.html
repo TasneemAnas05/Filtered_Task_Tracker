@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+
+    <label class="switch">
+        <input type="checkbox" id="mode-toggle-checkbox">
+        <span class="slider"></span>
+    </label>
+
+    <div class="parent">
+        <div class="up">
+            <form id="form">
+                <h1>Enter your task in here :</h1>
+                <textarea cols="50" rows="5" id="task"></textarea>
+                <div id="error"></div>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div class="down">
+            <h2>Your tasks : </h2>
+            <div id="filter-buttons">
+                <button id="filter-all" class="active">All</button>
+                <button id="filter-done">Done</button>
+                <button id="filter-inprogress">In Progress</button>
+            </div>
+            <div id="tasks">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
